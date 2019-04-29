@@ -1,0 +1,19 @@
+// incrementing as many times a button is clicked
+//practised exercise on jscomplete.com/playground
+
+function Button(){
+    // const is variable defining keyword
+    // always return an array(useState)
+    // syntax const [currentStateValue, functionToStateNewStateValue] = useState(initialStateValue)
+    // 0 anything you pass there shows up as the button label 
+    const [counter, setCounter] = useState(0) 
+    return <button onClick = {() => setCounter(counter + 1)}>{counter}</button>;
+}
+ReactDOM.render(
+<Button/>,
+document.getElementById('mountNode')
+)
+
+// always name your function with an uppercase letter
+// useState() returns two items; first is a state object and second a function to change the state object(this case counter, setCounter)
+// 
