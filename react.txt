@@ -1,0 +1,22 @@
+ReactDOM 
+-provides DOM specific methods that can be used on app
+
+ReactDOM -- render JSX(convinient tool to write readable HTML within javascript
+) directly to to HTML DOM
+
+ReactDOM.render(element, container, [callback]) - 
+render is to get or fetch data
+
+ReactDOM.hydrate(element, container, [callback])
+
+ReactDOM.unmountComponentAtNode(element, container, [callback])
+
+ReactDOM.findDOMNode(element, container, [callback])
+
+ReactDOM.createPortal(element, container, [callback])
+To display a react component in a browser we need to instruct the reactDOM library on how to do that (ReactDOM.render())
+
+useState()
+-is the way if we need an internal state and don't need to implement more complex logic such as lifecycle methods.
+https://reactjs.org/docs/hooks-state.html
+
